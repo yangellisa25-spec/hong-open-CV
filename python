@@ -1,1 +1,13 @@
+import cv2
 
+def main():
+    print("hells")
+    print(cv2.__version__)
+    imgfile="/home/yangellisa/hong-open-CV/data/lenna.bmp"
+    img = cv2.imread(imgfile)
+    cv2.imshow("lenna img", img)
+    cv2.waitKey(0)
+    cv2.destroyAllWindow()
+              
+if __name__=="__main__":
+    main()
